@@ -17,8 +17,7 @@ app.use(routes);
 
 // Connect to the Mongo DB
 mongoose.connect(
-  process.env.MONGODB_URI ||
-    `mongodb://user1:password1@ds241288.mlab.com:41288/heroku_t4c44crz`,
+  process.env.MONGODB_URI || `mongodb://localhost/reactreadinglist`,
   {
     useUnifiedTopology: true,
     useNewUrlParser: true,
